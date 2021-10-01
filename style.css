@@ -1,0 +1,108 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--Pale-blue);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+  color: var(--Desaturated-blue);
+}
+
+.card-wrapper {
+  background-color: white;
+  box-shadow: 5px;
+  min-width: 320px;
+  max-width: 450px;
+  max-height: 700px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 70%;
+  /* min-width: 280px; */
+}
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.order-summary {
+  margin: 30px 30px 15px;
+  text-align: center;
+  line-height: 27px;
+}
+.order-summary h2,
+strong {
+  font-weight: 900;
+  color: var(--Dark-blue);
+  /* margin-bottom: 25px; */
+}
+
+.plan {
+  margin: 25px 0 15px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--Very-pale-blue);
+  padding: 15px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan a {
+  /* margin: 0 0 0 20px; */
+  font-weight: 700;
+  color: var(--Bright-blue);
+  font-size: 13px;
+}
+.text {
+  margin: 0 3%;
+  font-size: 15px;
+}
+
+.button {
+  width: 100%;
+  background-color: var(--Bright-blue);
+  border-radius: 10px;
+  text-align: center;
+}
+.button a {
+  color: white;
+  display: block;
+  /* margin: 10px 0; */
+
+  padding: 10px 20%;
+  text-decoration: none;
+}
+
+.cancel-order {
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  text-align: center;
+  margin: 5% 0 9%;
+}
